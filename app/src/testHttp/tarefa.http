@@ -1,0 +1,36 @@
+
+baseUrl = https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas
+
+###
+
+GET https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas
+
+###
+
+POST https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Atividade 2",
+    "concluido": true
+}
+
+###
+
+GET https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas/2
+
+
+###
+
+PUT https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas/2
+Content-Type: application/json
+Authorization: Bearer ACCESS-TOKEN
+
+{
+    "descricao": "Nova atividae atualizada",
+    "concluido": false
+}
+
+
+###
+DELETE https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas/2
