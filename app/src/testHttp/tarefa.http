@@ -1,13 +1,13 @@
 
-baseUrl = https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas
+@baseUrl = https://8080-joseaugusto-simplesprin-i9ku3ujpmoo.ws-us115.gitpod.io
 
 ###
 
-GET https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas
+GET {{baseUrl}}/tarefas
 
 ###
 
-POST https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas
+POST {{baseUrl}}/tarefas
 Content-Type: application/json
 
 {
@@ -17,12 +17,12 @@ Content-Type: application/json
 
 ###
 
-GET https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas/2
+GET {{baseUrl}}/tarefas/2
 
 
 ###
 
-PUT https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas/2
+PUT {{baseUrl}}/2
 Content-Type: application/json
 Authorization: Bearer ACCESS-TOKEN
 
@@ -33,4 +33,4 @@ Authorization: Bearer ACCESS-TOKEN
 
 
 ###
-DELETE https://curly-space-dollop-q55qg56xrrrf959-8080.app.github.dev/tarefas/2
+DELETE {{baseUrl}}/tarefas/2
