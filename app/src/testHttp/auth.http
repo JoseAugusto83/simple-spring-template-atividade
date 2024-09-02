@@ -1,19 +1,15 @@
 
 @baseUrl = https://8080-joseaugusto-simplesprin-i9ku3ujpmoo.ws-us115.gitpod.io
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVGFyZWZhcyIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzI1MzE0NjIwfQ.96Px8OVKI65_u6jw8FZI2O4MENmuReV4FkIbDU93hH8
-###
-
-GET {{baseUrl}}/tarefas
 
 ###
 
-POST {{baseUrl}}/tarefas
-Authorization: Bearer {{token}}
+
+POST {{baseUrl}}/auth
 Content-Type: application/json
 
 {
-    "descricao": "Atividade autenticada",
-    "concluido": true
+    "nomeDeUsuario": "admin",
+    "senha": "admin"
 }
 
 ###
